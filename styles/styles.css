@@ -135,18 +135,21 @@ nav ul li a.active::after {
 
 /* Sección Hero */
 #hero {
-    background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url('/api/placeholder/1500/800');
-    background-size: cover;
-    background-position: center;
-    color: var(--text-light);
-    text-align: center;
-    padding: 8rem 2rem;
+    background-image: url('../images/fondoPrincipal.jpg'); /* Reemplaza con la ruta de tu imagen */
+    background-size: cover; /* Asegura que la imagen cubra todo el área */
+    background-position: center; /* Centra la imagen */
+    height: 100vh; /* Altura de la sección igual a la altura de la ventana */
+    display: flex; /* Para centrar el contenido */
+    align-items: center; /* Centra verticalmente el contenido */
+    justify-content: center; /* Centra horizontalmente el contenido */
+    color: white; /* Cambia el color del texto si es necesario */
+    text-align: center; /* Centra el texto */
 }
 
-.hero-content h2 {
-    font-size: 3rem;
-    margin-bottom: 1rem;
-    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.8);
+.hero-content {
+    background-color: rgba(0, 0, 0, 0.5); /* Fondo semi-transparente para mejorar la legibilidad */
+    padding: 20px; /* Espaciado interno */
+    border-radius: 10px; /* Bordes redondeados */
 }
 
 .hero-content p {
@@ -171,40 +174,52 @@ nav ul li a.active::after {
     gap: 20px;
     justify-content: center;
     flex-wrap: wrap;
+    padding: 20px;
 }
 
 .pizza-card {
-    width: 250px;
+    width: 260px;
     text-align: center;
-    border-radius: 10px;
+    border-radius: 12px;
     padding: 15px;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-    background-color: #fff;
+    background: linear-gradient(135deg, #ffefba, #ffffff);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.pizza-card:hover {
+    transform: scale(1.05);
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.25);
 }
 
 .pizza-card img {
     width: 100%;
     border-radius: 10px;
+    height: 180px;
+    object-fit: cover;
 }
 
 .pizza-card h3 {
     margin: 10px 0 5px;
-    font-size: 1.2rem;
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #d35400;
 }
 
 .pizza-card p {
     font-size: 1rem;
     color: #555;
+    margin-bottom: 8px;
 }
-
 
 .price {
-    display: block;
-    font-size: 1.3rem;
+    font-size: 1.2rem;
     font-weight: bold;
-    color: var(--primary-green);
-    padding: 0.5rem 1rem 1.5rem;
+    color: #e74c3c;
+    display: block;
+    margin-top: 5px;
 }
+
 
 /* Sección Historia */
 #historia {
