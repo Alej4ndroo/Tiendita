@@ -458,3 +458,88 @@ footer {
         max-width: 300px;
     }
 }
+
+/* Menú de pizzas - Overlay */
+.menu-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    visibility: hidden;
+    opacity: 0;
+    transition: opacity 0.3s ease, visibility 0.3s;
+}
+
+.menu-overlay.show {
+    visibility: visible;
+    opacity: 1;
+}
+
+/* Contenedor del menú */
+.menu-content {
+    background: var(--primary-white);
+    padding: 2rem;
+    width: 90%;
+    max-width: 600px;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Botón de cierre */
+.close-btn {
+    background: none;
+    border: none;
+    font-size: 2rem;
+    color: var(--primary-red);
+    cursor: pointer;
+    position: absolute;
+    top: 1rem;
+    right: 1rem;
+}
+
+/* Lista de pizzas */
+.pizza-list {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+/* Tarjetas de pizza */
+.pizza-item {
+    background: var(--bg-light);
+    padding: 1rem;
+    border-radius: 10px;
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+.pizza-item img {
+    width: 100%;
+    max-width: 250px;
+    border-radius: 10px;
+}
+
+.pizza-item h3 {
+    color: var(--primary-red);
+    margin-top: 0.5rem;
+}
+
+.pizza-item p {
+    font-size: 0.9rem;
+    color: var(--text-dark);
+}
+
+.pizza-item .price {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: var(--primary-green);
+    margin-top: 0.5rem;
+}
