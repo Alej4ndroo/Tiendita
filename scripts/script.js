@@ -10,13 +10,13 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Pepperoni",
             description: "Tomate, mozzarella y pepperoni italiano",
             price: "$10.99",
-            image: "../images/pepperoni.jpg"
+            image: "../images/pepperoni.png"
         },
         {
             name: "Prosciutto",
             description: "Tomate, mozzarella, jamón y rúcula",
             price: "$12.99",
-            image: "../images/prosciutto.jpg"
+            image: "../images/prosciutto.png"
         }
     ];
 
@@ -38,16 +38,16 @@ document.addEventListener("DOMContentLoaded", () => {
 
 document.addEventListener("DOMContentLoaded", () => {
     const pizzas = [
-        { nombre: "Margarita", ingredientes: "Tomate, mozzarella, albahaca", precio: "$8", imagen: "margarita.jpg" },
-        { nombre: "Pepperoni", ingredientes: "Pepperoni, mozzarella, tomate", precio: "$10", imagen: "pepperoni.jpg" },
-        { nombre: "Hawaiana", ingredientes: "Piña, jamón, mozzarella", precio: "$9", imagen: "hawaiana.jpg" },
-        { nombre: "Cuatro Quesos", ingredientes: "Mozzarella, gorgonzola, parmesano, cheddar", precio: "$11", imagen: "cuatroquesos.jpg" },
-        { nombre: "Vegetariana", ingredientes: "Champiñones, pimientos, cebolla, tomate", precio: "$9", imagen: "vegetariana.jpg" },
-        { nombre: "BBQ Chicken", ingredientes: "Pollo, salsa BBQ, mozzarella, cebolla", precio: "$12", imagen: "bbqchicken.jpg" },
-        { nombre: "Napolitana", ingredientes: "Anchoas, tomate, aceitunas, mozzarella", precio: "$10", imagen: "napolitana.jpg" },
-        { nombre: "Carbonara", ingredientes: "Bacon, huevo, parmesano, mozzarella", precio: "$11", imagen: "carbonara.jpg" },
-        { nombre: "Marinera", ingredientes: "Mariscos, ajo, tomate, mozzarella", precio: "$13", imagen: "marinera.jpg" },
-        { nombre: "Mexicana", ingredientes: "Carne, jalapeños, cebolla, tomate", precio: "$12", imagen: "mexicana.jpg" }
+        { nombre: "Margarita", ingredientes: "Tomate, mozzarella, albahaca", precio: "$8", imagen: "margarita.png" },
+        { nombre: "Pepperoni", ingredientes: "Pepperoni, mozzarella, tomate", precio: "$10", imagen: "pepperoni.png" },
+        { nombre: "Hawaiana", ingredientes: "Piña, jamón, mozzarella", precio: "$9", imagen: "hawaiana.png" },
+        { nombre: "Cuatro Quesos", ingredientes: "Mozzarella, gorgonzola, parmesano, cheddar", precio: "$11", imagen: "cuatroquesos.png" },
+        { nombre: "Vegetariana", ingredientes: "Champiñones, pimientos, cebolla, tomate", precio: "$9", imagen: "vegetariana.png" },
+        { nombre: "BBQ Chicken", ingredientes: "Pollo, salsa BBQ, mozzarella, cebolla", precio: "$12", imagen: "bbqchicken.png" },
+        { nombre: "Napolitana", ingredientes: "Anchoas, tomate, aceitunas, mozzarella", precio: "$10", imagen: "napolitana.png" },
+        { nombre: "Carbonara", ingredientes: "Bacon, huevo, parmesano, mozzarella", precio: "$11", imagen: "carbonara.png" },
+        { nombre: "Marinera", ingredientes: "Mariscos, ajo, tomate, mozzarella", precio: "$13", imagen: "marinera.png" },
+        { nombre: "Mexicana", ingredientes: "Carne, jalapeños, cebolla, tomate", precio: "$12", imagen: "mexicana.png" }
     ];
 
     const menu = document.getElementById("menu");
@@ -67,6 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             <h2>${pizza.nombre}</h2>
             <p>${pizza.ingredientes}</p>
             <span>${pizza.precio}</span>
+            <br>
             <button class="add-to-cart">Agregar al carrito</button>
         `;
         
