@@ -16,7 +16,31 @@ document.addEventListener("DOMContentLoaded", () => {
             name: "Prosciutto",
             description: "Tomate, mozzarella, jamón y rúcula",
             price: "$12.99",
-            image: "../images/prosciutto.png"
+            image: "../images/prosciutto.jpg"
+        },
+        {
+            name: "Cuatro Quesos",
+            description: "Mozzarella, gorgonzola, parmesano y queso de cabra",
+            price: "$13.99",
+            image: "../images/cuatroquesos.jpg"
+        },
+        {
+            name: "Hawaiana",
+            description: "Tomate, mozzarella, jamón y piña",
+            price: "$11.99",
+            image: "../images/hawaiana.jpg"
+        },
+        {
+            name: "BBQ Chicken",
+            description: "Pollo a la BBQ, mozzarella y cebolla morada",
+            price: "$14.99",
+            image: "../images/bbqchicken.jpg"
+        },
+        {
+            name: "Vegetariana",
+            description: "Tomate, mozzarella, champiñones, pimientos y aceitunas",
+            price: "$9.99",
+            image: "../images/vegetariana.jpg"
         }
     ];
 
