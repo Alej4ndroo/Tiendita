@@ -4,61 +4,8 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Menú de Pizzería</title>
-    <link rel="stylesheet" href="styles/styles.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-            text-align: center;
-            background-color: #f8f8f8;
-        }
-        nav a:hover {
-            color: #d35400;
-        }
-        header {
-        background-color: var(--primary-white);
-        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
-        padding: 0.8rem 2rem;
-        position: sticky;
-        top: 0;
-        z-index: 100;
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-    }
-        #menu {
-            display: flex;
-            flex-wrap: wrap;
-            justify-content: center;
-            padding: 20px;
-        }
-        .pizza {
-            background: white;
-            border-radius: 10px;
-            margin: 15px;
-            padding: 20px;
-            width: 300px;
-            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-        }
-        .pizza img {
-            width: 100%;
-            border-radius: 10px;
-        }
-        .pizza h2 {
-            font-size: 22px;
-            color: #333;
-        }
-        .pizza p {
-            font-size: 16px;
-            color: #555;
-        }
-        .pizza span {
-            font-weight: bold;
-            font-size: 18px;
-            color: #d35400;
-        }
-    </style>
+    <link rel="stylesheet" href="styles/menuStyles.css">
+       
 </head>
 <body>
 
@@ -78,34 +25,6 @@
         </nav>
     </header>
     <main id="menu"></main>
-    <script>
-        document.addEventListener("DOMContentLoaded", () => {
-            const pizzas = [
-                { nombre: "Margarita", ingredientes: "Tomate, mozzarella, albahaca", precio: "$8", imagen: "margarita.jpg" },
-                { nombre: "Pepperoni", ingredientes: "Pepperoni, mozzarella, tomate", precio: "$10", imagen: "pepperoni.jpg" },
-                { nombre: "Hawaiana", ingredientes: "Piña, jamón, mozzarella", precio: "$9", imagen: "hawaiana.jpg" },
-                { nombre: "Cuatro Quesos", ingredientes: "Mozzarella, gorgonzola, parmesano, cheddar", precio: "$11", imagen: "cuatroquesos.jpg" },
-                { nombre: "Vegetariana", ingredientes: "Champiñones, pimientos, cebolla, tomate", precio: "$9", imagen: "vegetariana.jpg" },
-                { nombre: "BBQ Chicken", ingredientes: "Pollo, salsa BBQ, mozzarella, cebolla", precio: "$12", imagen: "bbqchicken.jpg" },
-                { nombre: "Napolitana", ingredientes: "Anchoas, tomate, aceitunas, mozzarella", precio: "$10", imagen: "napolitana.jpg" },
-                { nombre: "Carbonara", ingredientes: "Bacon, huevo, parmesano, mozzarella", precio: "$11", imagen: "carbonara.jpg" },
-                { nombre: "Marinera", ingredientes: "Mariscos, ajo, tomate, mozzarella", precio: "$13", imagen: "marinera.jpg" },
-                { nombre: "Mexicana", ingredientes: "Carne, jalapeños, cebolla, tomate", precio: "$12", imagen: "mexicana.jpg" }
-            ];
-
-            const menu = document.getElementById("menu");
-            pizzas.forEach(pizza => {
-                const div = document.createElement("div");
-                div.classList.add("pizza");
-                div.innerHTML = `
-                    <img src="images/${pizza.imagen}" alt="${pizza.nombre}">
-                    <h2>${pizza.nombre}</h2>
-                    <p>${pizza.ingredientes}</p>
-                    <span>${pizza.precio}</span>
-                `;
-                menu.appendChild(div);
-            });
-        });
-    </script>
+    <script src="scripts/script.js"></script>
 </body>
 </html>
